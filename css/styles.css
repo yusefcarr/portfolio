@@ -99,7 +99,7 @@ body {
   line-height: var(--bs-body-line-height);
   color: #f4f027;
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  background-color: #dcc48e;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -129,7 +129,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: calc(1.325rem + 0.9vw);
+  /* font-size: calc(1.325rem + 0.9vw); */
 }
 @media (min-width: 1200px) {
   h2, .h2 {
@@ -166,6 +166,7 @@ h6, .h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 abbr[title] {
@@ -8126,7 +8127,7 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: #9999a1 !important;
+  background-color: #1E8076 !important;
 }
 
 .bg-secondary {
@@ -10958,14 +10959,15 @@ html {
 }
 
 .callout {
-  padding: 15rem 0;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-callout.jpg");
+  /* padding: 15rem 0; */
+  background: url("../assets/vid/Game\ Promo\ Video.mp4");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
 }
 .callout h2, .callout .h2 {
-  font-size: 3.5rem;
+  /* font-size: 3.5rem; */
   font-weight: 700;
   display: block;
   max-width: 30rem;
@@ -11107,4 +11109,69 @@ footer.footer .social-link:hover {
   line-height: 7.5rem;
   font-size: 2.25rem;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* video css */
+video {
+  width: 100vw;
+  min-height:40vh;
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+  object-fit: cover; 
+}
+.header-text {
+  /* position: absolute; */
+  color: white;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  transform: translateY(-5rem);
+  /* top: 0; */
+  /* bottom: 0;
+  left: 0;
+  right: 0;   */
+}
+.header-text h1 {
+  font-weight: 400;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.header-text  {
+  display: block;
+  font-weight: 900;
+  position: relative;
+  bottom: 70vh;
+  font-size: 3.5rem;
+}
+.description {
+  /* position: absolute;
+  bottom: 0; 
+  left: 0;
+  right: 0; */
+  margin: auto;
+  color: white;
+  background-color: hsl(181deg 50% 20% / 70%);
+  padding: 2rem; 
+}
+
+@media(max-width: 768px){
+  .header-text  {
+    display: block;
+    font-weight: 900;
+    position: relative;
+    bottom: 35vh;
+    font-size: 3rem;
+  }
+}
+@media(max-width: 576px){
+  .header-text  {
+    display: block;
+    font-weight: 900;
+    position: relative;
+    bottom: 25vh;
+    font-size: 2rem;
+  }
 }
