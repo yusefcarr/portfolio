@@ -10833,7 +10833,7 @@ html {
 }
 
 .content-section {
-  padding-top: 7.5rem;
+  padding-top: 15rem;
   padding-bottom: 7.5rem;
 }
 
@@ -11176,8 +11176,12 @@ video {
     display: block;
     font-weight: 900;
     position: relative;
-    bottom: 35vh;
+    bottom: 25vh;
     font-size: 2rem;
+  }
+  .content-section {
+    padding-top: 2rem;
+    padding-bottom: 7.5rem;
   }
 }
 @media(max-width: 576px){
@@ -11187,5 +11191,9 @@ video {
     position: relative;
     bottom: 25vh;
     font-size: 2rem;
+  }
+  .content-section {
+    padding-top: 0rem;
+    padding-bottom: 7.5rem;
   }
 }
